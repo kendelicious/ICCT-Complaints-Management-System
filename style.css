@@ -1,0 +1,112 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(201, 7, 107, 0.8);
+  }
+  .container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 13px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+  }
+  .container .form{
+    padding: 30px;
+  }
+  .container .form .title{
+    position: relative;
+    font-size: 52px;
+    font-weight: 600;
+    color: rgba(201, 7, 107, 0.8);
+  }
+  .form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 37px;
+    background-color: #ccc;
+    border-radius: 25px;
+  }
+  .form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+  .input-field input:is(:focus, :valid){
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+  }
+  .input-field i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+    transition: all 0.2s ease;
+  }
+  .input-field input:is(:focus, :valid) ~ i{
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .links{
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .form .text{
+    color: #333;
+    font-size: 14px;
+  }
+  .form a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .form a:hover{
+    text-decoration: underline;
+  }
+  .form .btn{
+    margin-top: 35px;
+  }
+  .form .btn input{
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: rgba(201, 7, 107, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .form .btn input:hover{
+    background-color: rgba(249, 10, 133, 0.8);
+  }
